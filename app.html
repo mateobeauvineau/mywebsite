@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our App — Apeiron Energies</title>
+  <meta name="description" content="The Apeiron platform: a unified BAS dashboard with predictive analytics, real-time HVAC optimization, and AI-driven alerts across your entire building portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="Apeiron Energies home">
+        <span class="logo-mark" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2.5"/><circle cx="16" cy="16" r="7" stroke="currentColor" stroke-width="2"/></svg></span>
+        <span class="logo-text">Apeiron <span class="logo-sub">Energies</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span>
+      </button>
+      <nav id="nav-menu" class="nav-links" role="navigation" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="mission.html" class="nav-link">The Mission</a>
+        <a href="app.html" class="nav-link active" aria-current="page">Our App</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link nav-cta">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero page-hero--app" aria-labelledby="app-hero-heading">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow">The Platform</p>
+        <h1 id="app-hero-heading">A unified view of<br/><em>every building.</em></h1>
+        <p class="hero-sub hero-sub--narrow">One dashboard. Every HVAC system. Real-time AI insights that let your team focus on what matters — not on sorting through noise.</p>
+        <a href="contact.html" class="btn btn--primary">See it Live</a>
+      </div>
+    </section>
+
+    <!-- DASHBOARD MOCKUP -->
+    <section class="dashboard-section" aria-labelledby="dashboard-heading">
+      <div class="container">
+        <h2 class="sr-only" id="dashboard-heading">Dashboard Preview</h2>
+        <div class="dashboard-mockup" aria-label="Apeiron platform dashboard mockup">
+          <div class="mockup-bar" aria-hidden="true">
+            <span class="mockup-dot mockup-dot--red"></span>
+            <span class="mockup-dot mockup-dot--yellow"></span>
+            <span class="mockup-dot mockup-dot--green"></span>
+            <span class="mockup-url">app.apeironenergies.com</span>
+          </div>
+          <div class="mockup-content" aria-hidden="true">
+            <!-- Header bar -->
+            <div class="mock-header">
+              <span class="mock-logo-text">⚡ BAS Equipment Dashboard</span>
+              <span class="mock-updated">Last updated: 11:15:38</span>
+            </div>
+            <!-- Alert bar -->
+            <div class="mock-alert">
+              <span class="mock-alert-icon">△</span> 0 equipment in critical state · 3 high-priority failure predictions
+            </div>
+            <!-- Stats row -->
+            <div class="mock-stats-row">
+              <div class="mock-stat"><div class="mock-stat-label">Total Equipment</div><div class="mock-stat-val">8</div></div>
+              <div class="mock-stat"><div class="mock-stat-label">Operational</div><div class="mock-stat-val mock-stat-val--green">5</div></div>
+              <div class="mock-stat"><div class="mock-stat-label">Warnings</div><div class="mock-stat-val mock-stat-val--yellow">3</div></div>
+              <div class="mock-stat"><div class="mock-stat-label">Critical</div><div class="mock-stat-val mock-stat-val--red">0</div></div>
+            </div>
+            <!-- Equipment grid -->
+            <div class="mock-label">Current Power Levels (8 equipment)</div>
+            <div class="mock-equipment-grid">
+              <div class="mock-equip"><div class="mock-equip-name">Chiller Unit 1</div><div class="mock-equip-val">246.1 <span>kW</span></div><div class="mock-progress"><div class="mock-progress-bar" style="width:82%"></div></div></div>
+              <div class="mock-equip"><div class="mock-equip-name">Chiller Unit 2</div><div class="mock-equip-val">182.3 <span>kW</span></div><div class="mock-progress"><div class="mock-progress-bar" style="width:61%"></div></div></div>
+              <div class="mock-equip mock-equip--warn"><div class="mock-equip-name">Cooling Pump 1 △</div><div class="mock-equip-val">9.9 <span>kW</span></div><div class="mock-progress"><div class="mock-progress-bar mock-progress-bar--warn" style="width:66%"></div></div></div>
+              <div class="mock-equip"><div class="mock-equip-name">Cooling Tower Fan 1</div><div class="mock-equip-val">36.5 <span>kW</span></div><div class="mock-progress"><div class="mock-progress-bar" style="width:73%"></div></div></div>
+              <div class="mock-equip"><div class="mock-equip-name">Compressor Unit 1</div><div class="mock-equip-val">156.2 <span>kW</span></div><div class="mock-progress"><div class="mock-progress-bar mock-progress-bar--warn" style="width:78%"></div></div></div>
+              <div class="mock-equip"><div class="mock-equip-name">Compressor Unit 2</div><div class="mock-equip-val">101.2 <span>kW</span></div><div class="mock-progress"><div class="mock-progress-bar" style="width:51%"></div></div></div>
+            </div>
+            <!-- Failure panel preview -->
+            <div class="mock-label">Predictive Failure Analysis <span class="mock-badge mock-badge--critical">1 Critical</span><span class="mock-badge mock-badge--high">2 High</span></div>
+            <div class="mock-failure-card mock-failure-card--critical">
+              <div class="mock-failure-header"><span>Cooling Tower Fan 1</span><span class="mock-badge mock-badge--critical">CRITICAL</span></div>
+              <div class="mock-failure-detail">Score: 92 · Confidence: 94% · Failure Type: Bearing Wear</div>
+              <div class="mock-failure-eta">⏱ Predicted failure in: 2 days</div>
+            </div>
+            <div class="mock-failure-card mock-failure-card--high">
+              <div class="mock-failure-header"><span>Cooling Pump 1</span><span class="mock-badge mock-badge--high">HIGH</span></div>
+              <div class="mock-failure-detail">Score: 71 · Confidence: 75% · Failure Type: Impeller Wear</div>
+              <div class="mock-failure-eta">⏱ Predicted failure in: 14 days</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">How It Works</p>
+          <h2 id="how-heading">From Chaos to Clarity in Days</h2>
+        </div>
+        <ol class="how-steps" aria-label="How Apeiron works">
+          <li class="how-step">
+            <div class="step-num" aria-hidden="true">01</div>
+            <div class="step-content">
+              <h3>Connect Your Systems</h3>
+              <p>Apeiron integrates with your existing BAS infrastructure — Siemens, Honeywell, Johnson Controls, ALC, and more — via secure software bridge. No hardware changes, no downtime.</p>
+            </div>
+          </li>
+          <li class="how-step">
+            <div class="step-num" aria-hidden="true">02</div>
+            <div class="step-content">
+              <h3>Centralize & Normalize Data</h3>
+              <p>All your building data flows into a single unified platform. Equipment readings, energy consumption, maintenance logs — normalized and accessible in real time.</p>
+            </div>
+          </li>
+          <li class="how-step">
+            <div class="step-num" aria-hidden="true">03</div>
+            <div class="step-content">
+              <h3>AI Learns Your Portfolio</h3>
+              <p>Our Liquid Neural Network analyzes patterns across all your buildings, identifies inefficiencies, and begins optimizing HVAC schedules automatically.</p>
+            </div>
+          </li>
+          <li class="how-step">
+            <div class="step-num" aria-hidden="true">04</div>
+            <div class="step-content">
+              <h3>Act on Ranked Alerts</h3>
+              <p>Instead of drowning in notifications, your team sees AI-ranked, prioritized alerts with clear recommendations — so time goes to real problems, not noise.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FEATURES DETAIL -->
+    <section class="feature-detail" aria-labelledby="feature-detail-heading">
+      <div class="container">
+        <div class="section-header section-header--light">
+          <p class="eyebrow eyebrow--light">Platform Capabilities</p>
+          <h2 id="feature-detail-heading">Everything Your Facilities Team Needs</h2>
+        </div>
+        <div class="feature-detail-grid">
+          <article class="fdetail-card">
+            <h3>Portfolio-Wide Visibility</h3>
+            <p>See every building, every system, every alert — from a single command center. Filter by building, system type, priority level, or equipment status.</p>
+            <ul class="fdetail-list" role="list">
+              <li>Real-time equipment status across all buildings</li>
+              <li>Power consumption overview with trend graphs</li>
+              <li>Cross-portfolio energy benchmarking</li>
+            </ul>
+          </article>
+          <article class="fdetail-card">
+            <h3>Predictive Failure Analysis</h3>
+            <p>Catch mechanical failures before they become emergencies. Confidence-scored alerts with specific failure type identification and timeline predictions.</p>
+            <ul class="fdetail-list" role="list">
+              <li>Bearing wear, impeller damage, efficiency loss detection</li>
+              <li>Days-to-failure predictions with confidence scores</li>
+              <li>Actionable maintenance recommendations</li>
+            </ul>
+          </article>
+          <article class="fdetail-card">
+            <h3>AI-Driven Optimization</h3>
+            <p>Autonomous HVAC scheduling and control that reduces energy consumption without sacrificing occupant comfort.</p>
+            <ul class="fdetail-list" role="list">
+              <li>Occupancy-aware scheduling</li>
+              <li>Weather-responsive setpoint adjustments</li>
+              <li>Demand-response grid participation</li>
+            </ul>
+          </article>
+          <article class="fdetail-card">
+            <h3>Compliance & Reporting</h3>
+            <p>Generate energy performance reports for ESG requirements, local building codes, and sustainability mandates with one click.</p>
+            <ul class="fdetail-list" role="list">
+              <li>Carbon reporting and compliance modules</li>
+              <li>ENERGY STAR data exports</li>
+              <li>Custom report builder for stakeholders</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing" aria-labelledby="app-pricing-heading">
+      <div class="container">
+        <div class="section-header section-header--light">
+          <p class="eyebrow eyebrow--light">Pricing</p>
+          <h2 id="app-pricing-heading">Simple. Transparent. Scalable.</h2>
+          <p class="section-sub">SaaS per building. No surprise hardware costs. Cancel anytime.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <div class="pricing-tier">Tier 0</div>
+            <h3 class="pricing-name">Dashboard</h3>
+            <div class="pricing-price"><span class="price-amount">$500</span><span class="price-unit">/building/yr</span></div>
+            <ul class="pricing-features" role="list">
+              <li>Unified equipment dashboard</li>
+              <li>Basic data aggregation</li>
+              <li>Status monitoring & alerts</li>
+              <li>Up to 10 buildings</li>
+            </ul>
+            <a href="contact.html" class="btn btn--outline-dark">Get Started</a>
+          </article>
+          <article class="pricing-card pricing-card--featured" aria-label="Most popular plan">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-tier">Tier 1</div>
+            <h3 class="pricing-name">Analytics</h3>
+            <div class="pricing-price"><span class="price-amount">$1,500</span><span class="price-unit">/building/yr</span></div>
+            <ul class="pricing-features" role="list">
+              <li>Everything in Dashboard</li>
+              <li>Predictive failure analysis</li>
+              <li>Energy efficiency reporting</li>
+              <li>Smart scheduling</li>
+              <li>Unlimited buildings</li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Get Started</a>
+          </article>
+          <article class="pricing-card">
+            <div class="pricing-tier">Tier 2</div>
+            <h3 class="pricing-name">Automation</h3>
+            <div class="pricing-price"><span class="price-amount">$4,250</span><span class="price-unit">/building/yr</span></div>
+            <ul class="pricing-features" role="list">
+              <li>Everything in Analytics</li>
+              <li>Full AI HVAC automation</li>
+              <li>Autonomous optimization</li>
+              <li>Carbon reporting module</li>
+              <li>Demand-response integration</li>
+            </ul>
+            <a href="contact.html" class="btn btn--outline-dark">Get Started</a>
+          </article>
+        </div>
+        <p class="pricing-note">* Range may vary depending on HVAC system size and complexity. Contact us for a custom quote.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="app-cta-heading">
+      <div class="container cta-inner">
+        <div>
+          <h2 id="app-cta-heading">See Apeiron in your buildings.</h2>
+          <p>We'll run a personalized demo using your portfolio's specific challenges.</p>
+        </div>
+        <a href="contact.html" class="btn btn--primary btn--lg">Request a Demo</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo--footer" aria-label="Apeiron Energies home">
+          <span class="logo-mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2.5"/><circle cx="16" cy="16" r="7" stroke="currentColor" stroke-width="2"/></svg></span>
+          <span class="logo-text">Apeiron <span class="logo-sub">Energies</span></span>
+        </a>
+        <p class="footer-tagline">AI-Driven Energy Intelligence for Centralized Building Efficiency.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-col">
+          <h3 class="footer-nav-heading">Company</h3>
+          <a href="mission.html">The Mission</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-nav-col">
+          <h3 class="footer-nav-heading">Product</h3>
+          <a href="app.html">Our App</a><a href="app.html#pricing">Pricing</a><a href="contact.html">Request Demo</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>© 2025 Apeiron Energies. All rights reserved.</p><p>Built at the University of Chicago.</p></div></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

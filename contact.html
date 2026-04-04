@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Apeiron Energies</title>
+  <meta name="description" content="Get in touch with the Apeiron Energies team. Request a demo, inquire about investment, or ask about a pilot program." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="Apeiron Energies home">
+        <span class="logo-mark" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2.5"/><circle cx="16" cy="16" r="7" stroke="currentColor" stroke-width="2"/></svg></span>
+        <span class="logo-text">Apeiron <span class="logo-sub">Energies</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span>
+      </button>
+      <nav id="nav-menu" class="nav-links" role="navigation" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="mission.html" class="nav-link">The Mission</a>
+        <a href="app.html" class="nav-link">Our App</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link active nav-cta" aria-current="page">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="container contact-inner">
+
+        <!-- LEFT COPY -->
+        <div class="contact-copy">
+          <p class="eyebrow">Get in Touch</p>
+          <h1 id="contact-heading">Let's talk about your buildings.</h1>
+          <p>Whether you're a property owner exploring pilot options, an investor interested in the space, or just curious — we'd love to hear from you.</p>
+
+          <div class="contact-options" role="list">
+            <div class="contact-option" role="listitem">
+              <div class="contact-option-icon" aria-hidden="true">🏢</div>
+              <div>
+                <h3>Property Owners</h3>
+                <p>Request a personalized demo for your specific portfolio. We'll walk you through exactly what Apeiron can do for your buildings.</p>
+              </div>
+            </div>
+            <div class="contact-option" role="listitem">
+              <div class="contact-option-icon" aria-hidden="true">💼</div>
+              <div>
+                <h3>Investors</h3>
+                <p>We're raising a $800K seed round. If you're interested in the commercial energy efficiency space, let's connect.</p>
+              </div>
+            </div>
+            <div class="contact-option" role="listitem">
+              <div class="contact-option-icon" aria-hidden="true">🤝</div>
+              <div>
+                <h3>Partners</h3>
+                <p>Integrators, energy consultants, and property management firms — we'd love to explore how we can work together.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form-wrapper">
+          <div id="form-success" class="form-success" hidden aria-live="polite" role="status">
+            <div class="success-icon" aria-hidden="true">✓</div>
+            <h2>Message received.</h2>
+            <p>We'll be in touch within 24 hours. Look forward to connecting.</p>
+          </div>
+
+          <form
+            id="contact-form"
+            class="contact-form"
+            novalidate
+            aria-labelledby="form-heading"
+          >
+            <h2 id="form-heading" class="form-heading">Send us a message</h2>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name" class="form-label">First Name <span aria-hidden="true" class="required-star">*</span></label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  class="form-input"
+                  autocomplete="given-name"
+                  required
+                  aria-required="true"
+                  aria-describedby="first-name-error"
+                />
+                <span id="first-name-error" class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="last-name" class="form-label">Last Name <span aria-hidden="true" class="required-star">*</span></label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  class="form-input"
+                  autocomplete="family-name"
+                  required
+                  aria-required="true"
+                  aria-describedby="last-name-error"
+                />
+                <span id="last-name-error" class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address <span aria-hidden="true" class="required-star">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                autocomplete="email"
+                required
+                aria-required="true"
+                aria-describedby="email-error"
+              />
+              <span id="email-error" class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="company" class="form-label">Company / Organization</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                class="form-input"
+                autocomplete="organization"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="buildings" class="form-label">Number of Buildings You Manage</label>
+              <select id="buildings" name="buildings" class="form-input form-select">
+                <option value="" disabled selected>Select a range</option>
+                <option value="1-4">1–4 buildings</option>
+                <option value="5-20">5–20 buildings</option>
+                <option value="21-50">21–50 buildings</option>
+                <option value="51-150">51–150 buildings</option>
+                <option value="150+">150+ buildings</option>
+                <option value="investor">I'm an investor / partner</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <fieldset class="form-fieldset">
+                <legend class="form-label">I'm interested in <span aria-hidden="true" class="required-star">*</span></legend>
+                <div class="form-checkbox-group">
+                  <label class="form-checkbox-label">
+                    <input type="checkbox" name="interest" value="demo" class="form-checkbox" />
+                    <span>Requesting a demo</span>
+                  </label>
+                  <label class="form-checkbox-label">
+                    <input type="checkbox" name="interest" value="pilot" class="form-checkbox" />
+                    <span>Joining a pilot program</span>
+                  </label>
+                  <label class="form-checkbox-label">
+                    <input type="checkbox" name="interest" value="investment" class="form-checkbox" />
+                    <span>Investment opportunities</span>
+                  </label>
+                  <label class="form-checkbox-label">
+                    <input type="checkbox" name="interest" value="partnership" class="form-checkbox" />
+                    <span>Partnership / integration</span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message <span aria-hidden="true" class="required-star">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-input form-textarea"
+                rows="5"
+                required
+                aria-required="true"
+                aria-describedby="message-error"
+                placeholder="Tell us about your portfolio, current systems, or any specific challenges you're facing..."
+              ></textarea>
+              <span id="message-error" class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-icon" aria-hidden="true">→</span>
+            </button>
+
+            <p class="form-privacy">We respect your privacy. Your information will never be shared with third parties.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo--footer" aria-label="Apeiron Energies home">
+          <span class="logo-mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2.5"/><circle cx="16" cy="16" r="7" stroke="currentColor" stroke-width="2"/></svg></span>
+          <span class="logo-text">Apeiron <span class="logo-sub">Energies</span></span>
+        </a>
+        <p class="footer-tagline">AI-Driven Energy Intelligence for Centralized Building Efficiency.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-col">
+          <h3 class="footer-nav-heading">Company</h3>
+          <a href="mission.html">The Mission</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-nav-col">
+          <h3 class="footer-nav-heading">Product</h3>
+          <a href="app.html">Our App</a><a href="app.html#pricing">Pricing</a><a href="contact.html">Request Demo</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>© 2025 Apeiron Energies. All rights reserved.</p><p>Built at the University of Chicago.</p></div></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
